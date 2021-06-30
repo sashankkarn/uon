@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Of Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="sub-header">
+        <nav>
+        <a href="index.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Home.html">ABOUT</a></li>    
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2>Our Certificate & Online Program For 2021</h2>
+        </section>
+<!--------blog page Content------->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="certificate.jpg">
+            <h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante nibh, sollicitudin in dignissim vel, condimentum non nisi. Curabitur fringilla, urna at accumsan commodo, elit augue egestas elit, vitae euismod nisl massa ut dui. Etiam nec tellus nec sapien tempus commodo ut quis metus. Donec sed porttitor enim. Sed interdum diam lacus, nec malesuada eros convallis sit amet. Nulla quis odio eu sem fringilla ultricies sed sit amet enim.</p>
+            <br>
+            <p>Integer sit amet imperdiet neque. Duis auctor sed eros vitae fringilla. Integer consectetur convallis augue quis ullamcorper. Donec turpis mauris, sagittis non lorem non, vehicula efficitur quam. Nam egestas, diam et pretium commodo, felis orci faucibus diam, vel pellentesque leo purus et arcu. Suspendisse finibus, lectus a placerat rutrum, enim ante vulputate dui, ut mattis eros orci et diam. Aliquam ut suscipit diam, et aliquam sem. Vivamus imperdiet, augue quis condimentum consequat, nunc orci tempus est, nec dignissim velit nisl non quam. Praesent dictum pretium commodo. Praesent lobortis et felis at tempus. Integer tincidunt ex libero, ut porta tellus vestibulum semper. In fringilla enim elit, nec suscipit ipsum sagittis non. Vestibulum lacinia varius lobortis. Vestibulum nec nibh vel orci eleifend ullamcorper. Curabitur vel risus mauris.</p>
+            <br>
+            <p>Nullam euismod blandit lectus, nec ornare orci eleifend quis. Nulla sed quam vulputate, eleifend felis quis, sodales odio. Nunc nec dolor sed eros mollis rutrum. Sed nec libero erat. Aliquam dui quam, bibendum at scelerisque id, egestas et massa. Nam commodo eros sed odio fermentum, quis interdum nisl venenatis. Cras at rutrum tellus. In hac habitasse platea dictumst.</p>
+            <br>
+            <p> Nulla quis odio eu sem fringilla ultricies sed sit amet enim. Aenean pretium, enim sit amet interdum consectetur, sem massa aliquet ligula, venenatis lacinia odio lacus et odio. Nulla ac fermentum turpis. Cras ipsum justo, ullamcorper eget sapien vel, interdum rhoncus sapien. Quisque gravida leo mauris, eu tincidunt turpis elementum at. Donec feugiat ullamcorper massa sed semper. Vestibulum lacinia lectus volutpat purus volutpat, eget pretium ex fermentum. Vivamus ut tempus libero, non eleifend odio. Nullam efficitur mattis lacus iaculis consequat.</p>
+            <div class="comment-box">
+                <h3>Leave A Comment</h3>
+                
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            
+            </div>
+            
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Learning Machine</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    
+    </div>
+
+</section>
+        
+        
+<!--------Footer------->  
+        
+        <section class="footer">
+        <h4>ABOUT US</h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum, ligula<br> eget pellent ultricies, augue metus pharetra quam, eget pellentesque velit diam et erat.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made By <i class="fa fa-heart-o"> </i> WhoseTheKing</p>
+        </section>
+
+    <!-----JAVASCRIPT FOR TOGGLE MENU----->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        </script>
+    
+    
+    </body>
+</html>
